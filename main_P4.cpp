@@ -32,41 +32,18 @@ int main()
     bool found = false;
     while(product > 0 && found == false){
         if(isPalindrome(product)){
-            //cout << "ARE WE HERE " << endl;
             //will have to work down and see what numbers equal this palindrome number
             //start at 100 and 100 and work you way up
             for(int i = 100; i < 1000; i++){
                 for(int j = 100; j < 1000; j++){
                     if((i*j) == product){
                         maxNum = product;
-                        //cout << product << endl;
-                        //cout << maxNum << endl;
-                        found = true;
+                       found = true;
                     }
                 }
             }
         }
         product--;
-        //cout << product << endl;
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-        /*int num1 = 999;
-        int num2 = 999;
-        unsigned long int product; // = num1 * num2;
-        //cout << product << endl;
-        unsigned long int maxNum = 0;
-        //bool found = false;
-        for(int i = 100; i < 1000; i ++){
-            for(int j = 100; j < 1000; j++){
-                product = i*j;
-                if(isPalindrome(product) && product > maxNum){
-                    maxNum = product;
-                }
-            }
-        }*/
-
-
 
     }
 
