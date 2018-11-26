@@ -1,6 +1,6 @@
 #include <iostream>
 #include <math.h>
-
+//Solution to project euler - #6
 using namespace std;
 
 int main()
@@ -13,7 +13,7 @@ int main()
     //pow function produced result that was off by one - so this method was used for simplicity
     squareOfSum = squareOfSum * squareOfSum;
 
-    for(int i = 1; i < 101; i ++){
+    for(int i = 1; i < range + 1; i ++){
         sumOfSquares += pow(i,2);
     }
 
