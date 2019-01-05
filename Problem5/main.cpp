@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    //.647s
+    //Brute force
     int Number = 20;
     bool found = false;
     while(found == false){
@@ -32,7 +32,7 @@ int main()
                 found = true;
             }
             else{
-                Number++;
+                Number += 20;
             }
 
         }*/
